@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/lpgo.png" alt="logo" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About us.html">ABOUT US</a></li>
+                    <li><a href="font.html">COMPETITION</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <header>
+            <h1>Games & Sports</h1>
+            <p>The College believes that Games and Sports are essential for mental, emotional, and physical well-being.</p>
+        </header>
+    
+        <section id="sports-facilities">
+            <div class="facility">
+                <img src="img/football.jpg" alt="Football Ground">
+                <h2>Football Ground</h2>
+                <p>The College has an international size football ground with astro turf...</p>
+            </div>
+    
+            <div class="facility">
+                <img src="img/basket.jpg" alt="Basketball Court">
+                <h2>Basketball Courts</h2>
+                <p>The Basketball court is accessible to all Sherubtse family for practice and matches except on class hours </p>
+            </div>
+    
+            <div class="facility">
+                <img src="img/ball.jpg" alt="Outdoor and Indoor Games">
+                <h2>Other Outdoor and Indoor Games</h2>
+                <p>the College also has a Volleyball court near the College Football field, one Tennis court, one Futsal ground, an Archery range and a Multipurpose Hall . </p>
+            </div>
+    
+            <div class="facility">
+                <img src="img/gym.jpeg" alt="Gymnasium">
+                <h2>Gymnasium (GYM)</h2>
+                <p>The College also has an indoor Gymnasium located inside the Multipurpose Hall.</p>
+            </div>
+        </section>
+    
+        <section id="feedback">
+            <h2>We'd Love Your Feedback!</h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+</body>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+<script src="info.js"></script>
+<footer>
+    <h4>Contact</h4>
+    <p>17000000</p>
+    <p>sherubtsegamesandsport@gmail.com</p>
+</footer>
+ </html>   

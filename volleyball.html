@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="bb.css">
+</head>
+<body>
+    <!-- Container for form and list -->
+    <section class="form-section">
+        <div class="container">
+            <h2>Student Detail Entry</h2>
+            <form id="studentForm" class="form-box">
+                <div class="input-group">
+                    <label for="name">Student Name *</label>
+                    <input type="text" id="name" name="stdtname" placeholder="Enter Student Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" name="course" placeholder="Enter Course">
+                </div>
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="text" id="year" name="year" placeholder="Enter Year">
+                </div>
+                <div class="input-group">
+                    <label for="day">Day</label>
+                    <input type="date" id="day" name="day">
+                </div>
+                <div class="input-group">
+                    <label for="start-time">Start Time</label>
+                    <input type="time" id="start-time" name="start-time">
+                </div>
+                <div class="input-group">
+                    <label for="end-time">End Time</label>
+                    <input type="time" id="end-time" name="end-time">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+                </div>
+                <button type="submit" class="submit-btn">Add</button>
+            </form>
+        </div>
+
+        <!-- Student List Table -->
+        <div class="container list">
+            <h2>Student List</h2>
+            <table id="stdList">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Day</th>
+                        <th>Time Range</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+     <!-- Back to Home Button -->
+     <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" class="back-home-btn">← Back to Home</a>
+    </div>
+    
+    <script src="fb.js"></script>
+
+</body>
+</html>

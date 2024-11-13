@@ -1,0 +1,308 @@
+/* General Reset */
+body {
+    background-color: #fff; /* Set background color to white */
+    font-family: Arial, sans-serif;
+    color: #000; /* Set text color to black */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    margin: 0;
+    text-align: center; /* Ensure text is centered */
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: rgba(251, 251, 251, 0.75) url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #000; /* Set link color to black */
+    text-decoration: none; /* Remove underline */
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f8b400;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Dropdown styles */
+.nav-links ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 160px;
+}
+
+.dropdown a {
+    color: rgb(222, 216, 216);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #575757;
+}
+
+/* Hero Button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .fa {
+    display: none;
+}
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+.back-button i {
+    font-size: 18px;
+}
+
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #7659f8;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #000000;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* Logo */
+.logo img {
+    width: 100px; /* Adjust size to fit your logo */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Background color */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertically centers the content */
+    min-height: 100vh;
+    padding: 0 10px; /* Padding to prevent overflow on mobile */
+}
+
+/* Section Style */
+section {
+    width: 100%;
+    max-width: 900px; /* Set a max width for sections */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures the text is centered */
+    margin-bottom: 30px;
+}
+
+/* Common section styles for each competition */
+.football-section, .volleyball-section, .basketball-section {
+    width: 80%;
+    background-color: #f8b400; /* Bright yellow background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Subtitle Style */
+.subtitle {
+    font-size: 1.2em;
+    color: #1a1a2e; /* Dark text to contrast against the bright background */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Description and Image container */
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow the content to stack on smaller screens */
+    width: 100%; /* Ensure it uses the full width available */
+}
+
+/* Description Text */
+.description {
+    font-size: 1.2em;
+    color: #333333; /* Darker text color for readability on light background */
+    line-height: 1.5;
+    max-width: 60%; /* Adjust width to make room for the image */
+    margin-bottom: 20px;
+}
+
+/* Image next to description */
+.description-image {
+    width: 35%; /* Set image width to fit alongside the text */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+/* Register Button */
+.register-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1a1a2e; /* Dark button color for contrast */
+    color: #f8b400;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.register-button:hover {
+    background-color: #333333; /* Slightly lighter dark shade on hover */
+    transform: translateY(-5px);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .description-container {
+        flex-direction: column; /* Stack image and text vertically on smaller screens */
+        align-items: center;
+    }
+
+    .description {
+        max-width: 100%; /* Ensure description takes up full width on small screens */
+        text-align: center;
+    }
+
+    .description-image {
+        width: 80%; /* Make the image larger on smaller screens */
+        margin-left: 0; /* Remove margin on mobile */
+        margin-top: 20px; /* Adds space between image and description */
+    }
+}
+
+.event-info {
+    list-style: none;
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.event-info li {
+    margin-bottom: 10px;
+}

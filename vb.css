@@ -1,0 +1,122 @@
+/* General Container and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 40px;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: url('img/VB.jfif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Student List Table Styling */
+.list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.list table th, .list table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.list table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.list table td {
+    background-color: #fafafa;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-box, .list table th, .list table td {
+        font-size: 14px;
+    }
+
+    .input-group input, .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Back to Home Button Style */
+.back-home-btn {
+    color: #eeecf3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #eeedf0;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-home-btn:hover {
+    background-color: #4CAF50;
+    color: rgb(2, 9, 12);
+}
+
+
+

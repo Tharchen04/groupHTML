@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="fmarathon.css">
+</head>
+<body>
+
+    <!-- Form Section -->
+    <div class="container">
+        <div class="form-box">
+            <h2>Student Detail Entry</h2>
+            <form id="studentForm">
+                <div class="input-group">
+                    <label for="name">Student Name *</label>
+                    <input type="text" id="name" name="stdtname" placeholder="Enter Student Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" name="course" placeholder="Enter Course">
+                </div>
+                <div class="input-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text" id="student-id" name="student-id" placeholder="Enter Student ID" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter Age" required>
+                </div>
+                <button type="submit" class="submit-btn">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Student List Section -->
+    <div class="container list">
+        <h2>Student List</h2>
+        <table id="stdList">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Student ID</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html" class="back-home-btn">← Back to Home</a>
+    </div>
+
+    <script src="marathon.js"></script>
+
+</body>
+</html>

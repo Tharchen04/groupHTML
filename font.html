@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/lpgo.png" alt="logo" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About us.html">ABOUT US</a></li>
+                    <li><a href="font.html">COMPETITION</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+    
+       
+    
+        <div class="container">
+            <!-- Hostel Competition Link -->
+            <div class="box">
+                <a href="hostel.html">
+                    <h2>Hostel Competition</h2>
+                    <p>All Hostel competitions for this season.</p>
+                </a>
+                
+            </div>
+    
+            <!-- Department Competition Link -->
+            <div class="box">
+                <a href="Departmental.html">
+                    <h2>Department</h2>
+                    <p>Department-wise competitions.</p>
+                </a>
+            </div>
+    
+            <!-- Monsoon Competition Link -->
+            <div class="box">
+                <a href="monsoon.html">
+                    <h2>Monsoon</h2>
+                    <p>A special monsoon competition.</p>
+                </a>
+            </div>
+    
+            <!-- Annual Marathon Link -->
+            <div class="box">
+                <a href="marathon.html">
+                    <h2>Annual Marathon</h2>
+                    <p>Annual marathon challenge.</p>
+                </a>
+            </div>
+    
+            <!-- Chancellor Cup Link -->
+            <div class="box">
+                <a href="cCup.html">
+                    <h2>Chancellor Cup</h2>
+                    <p>Take part in the prestigious event.</p>
+                </a>
+            </div>
+    
+            <!-- Class-wise Competition Link -->
+            <div class="box">
+                <a href="classwise.html">
+                    <h2>Class-wise Competition</h2>
+                    <p>Competitions for students.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = '0';
+        }
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+    <footer>
+        <h4>Contact</h4>
+        <p>17000000</p>
+        <p>sherubtsegamesandsport@gmail.com</p>
+    </footer>
+        
+        

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/lpgo.png" alt="logo" onclick="hideMenu()"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About us.html">ABOUT US</a></li>
+                    <li><a href="font.html">COMPETITION</a></li>
+                    <li><a href="information.html">INFORMATION</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome To Sherubtse Games and Sport</h1>
+            <p>Sport is a form of physical activity or game. Often competitive and organized, 
+                sports use, maintain, or improve physical ability and skills.
+                Games and sports are important to maintain a healthy life both physically and mentally. 
+                It keeps a person mentally fresh and focused.</p>
+            <a href="About us.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
+    <section class="booking-section">
+        <div class="booking-card">
+            <img src="img/football.jpg" alt="Ground Image">
+            <a href="football.html">
+            <button class="book-now-btn">Book Now</button>
+        </a></div>
+        <div class="booking-card">
+            <img src="img/basket.jpg" alt="Track Image">
+            <a href="basketball.html">
+            <button class="book-now-btn">Book Now</button>
+        </a></div>
+        <div class="booking-card">
+            <img src="img/volley.jpg" alt="Court Image">
+            <a href="volleyball.html">
+            <button class="book-now-btn">Book Now</button>
+        </a></div>
+    </section>
+</body>
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right = '0';
+    }
+    function hideMenu(){
+        navLinks.style.right = '-200px';
+    }
+</script>
+<footer>
+    <h4>Contact</h4>
+    <p>17000000</p>
+    <p>sherubtsegamesandsport@gmail.com</p>
+</footer>
+    
